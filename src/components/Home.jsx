@@ -1,5 +1,7 @@
  
 import '../App.css';
+import { Link } from 'react-router-dom';
+import Sidebar from './Sidebar';
 import $ from 'jquery';
 import Slider from 'react-slick';
 import Masonry from 'masonry-layout';
@@ -9,8 +11,42 @@ import 'slick-carousel/slick/slick-theme.css';
 import React, { useEffect, useState } from 'react';
 import 'google-code-prettify/bin/prettify.min.js'; // Import the prettify library
 import 'google-code-prettify/bin/prettify.min.css'
+import { Card, CardContent, Typography, Grid, TextField, MenuItem } from '@mui/material';
+import { dataprovider } from '../data';
+const blogData =  dataprovider();
+
 function Home() {
 
+    const [filteredBlogs, setFilteredBlogs] = React.useState(blogData);
+    const [filterKeyword, setFilterKeyword] = React.useState('');
+    const [filterCategory, setFilterCategory] = React.useState('');
+    const [filterField, setFilterField] = React.useState('title'); // Default filter field
+  
+    const handleFilterKeywordChange = (event) => {
+      const value = event.target.value.toLowerCase();
+      setFilterKeyword(value);
+      applyFilters(value, filterCategory.toLowerCase(), filterField);
+    };
+  
+    const handleFilterCategoryChange = (event) => {
+      const value = event.target.value.toLowerCase();
+      setFilterCategory(value);
+      applyFilters(filterKeyword.toLowerCase(), value, filterField);
+    };
+  
+    const handleFilterFieldChange = (event) => {
+      const value = event.target.value;
+      setFilterField(value);
+      applyFilters(filterKeyword.toLowerCase(), filterCategory.toLowerCase(), value);
+    };
+  
+    const applyFilters = (keywordFilter, categoryFilter, fieldFilter) => {
+      const filteredData = blogData.filter((blog) =>
+        blog[fieldFilter].toLowerCase().includes(keywordFilter) &&
+        blog.category.toLowerCase().includes(categoryFilter)
+      );
+      setFilteredBlogs(filteredData);
+    };
     useEffect(() => {
         // Add the User Agent to the <html>
         document.documentElement.setAttribute('data-useragent', navigator.userAgent);
@@ -34,6 +70,39 @@ function Home() {
         const siteBody = $('body');
     
         searchTrigger.on('click', (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          siteBody.addClass('search-is-visible');
+          setTimeout(() => {
+            searchField.focus();
+          }, 100);
+        });
+    
+        closeSearch.on('click', (e) => {
+          e.stopPropagation();
+          siteBody.removeClass('search-is-visible');
+          setTimeout(() => {
+            searchField.blur();
+          }, 100);
+        });
+    
+        searchWrap.on('click', (e) => {
+          if (!$(e.target).is('.search-field')) {
+            closeSearch.trigger('click');
+          }
+        });
+    
+        searchField.on('click', (e) => {
+          e.stopPropagation();
+        });
+    
+        searchField.attr({ placeholder: 'Type Keywords', autocomplete: 'off' });
+
+        //add post 
+         
+        const trigger = $('#float');
+    
+        trigger.on('click', (e) => {
           e.preventDefault();
           e.stopPropagation();
           siteBody.addClass('search-is-visible');
@@ -158,243 +227,112 @@ function Home() {
             <div></div>
         </div>
     </div> */}
-
+ 
+<a href="#0" id="float" class="header__search-trigger'">
+ 
+<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+<path d="M 25 2 C 12.309295 2 2 12.309295 2 25 C 2 37.690705 12.309295 48 25 48 C 37.690705 48 48 37.690705 48 25 C 48 12.309295 37.690705 2 25 2 z M 25 4 C 36.609824 4 46 13.390176 46 25 C 46 36.609824 36.609824 46 25 46 C 13.390176 46 4 36.609824 4 25 C 4 13.390176 13.390176 4 25 4 z M 24 13 L 24 24 L 13 24 L 13 26 L 24 26 L 24 37 L 26 37 L 26 26 L 37 26 L 37 24 L 26 24 L 26 13 L 24 13 z"></path>
+</svg>
+</a>
     <div id="top" class="s-wrap site-wrapper">
  
-        <header class="s-header">
-
-            <div class="header__top">
-                <div class="header__logo">
-                    <a class="site-logo" href="index.html">
-                        <img src="images/logo.svg" alt="Homepage"/>
-                    </a>
-                </div>
-
-                <div class="header__search">
-    
-                    <form role="search" method="get" class="header__search-form" action="#">
-                        <label>
-                            <span class="hide-content">Search for:</span>
-                            <input type="search" class="header__search-field" placeholder="Type Keywords" value="" name="s" title="Search for:" autocomplete="off" />
-                        </label>
-                        <input type="submit" class="header__search-submit" value="Search" />
-                    </form>
-        
-                    <a href="#0" title="Close Search" class="header__search-close">Close</a>
-        
-                </div>   
-
-           
-                <a href="#0" class="header__search-trigger"></a>
-                <a href="#0" class="header__menu-toggle"><span>Menu</span></a>
-
-            </div>  
-
-            <nav class="header__nav-wrap">
-
-                <ul class="header__nav">
-                    <li class="current"><a href="index.html" title="">Home</a></li>
-                    <li class="has-children">
-                        <a href="#0" title="">Categories</a>
-                        <ul class="sub-menu">
-                        <li><a href="category">Lifestyle</a></li>
-                        <li><a href="category">Health</a></li>
-                        <li><a href="category">Family</a></li>
-                        <li><a href="category">Management</a></li>
-                        <li><a href="category">Travel</a></li>
-                        <li><a href="category">Work</a></li>
-                        </ul>
-                    </li>
-                    <li class="has-children">
-                        <a href="#0" title="">Blog Posts</a>
-                        <ul class="sub-menu">
-                        <li><a href="single-video.html">Video Post</a></li>
-                        <li><a href="single-audio.html">Audio Post</a></li>
-                        <li><a href="single-gallery.html">Gallery Post</a></li>
-                        <li><a href="single-standard.html">Standard Post</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="styles.html" title="">Styles</a></li>
-                    <li><a href="page-about.html" title="">About</a></li>
-                    <li><a href="page-contact.html" title="">Contact</a></li>
-                </ul> 
-
-                <ul class="header__social">
-                    <li class="ss-facebook">
-                        <a href="https://facebook.com/">
-                            <span class="screen-reader-text">Facebook</span>
-                        </a>
-                    </li>
-                    <li class="ss-twitter">
-                        <a href="#0">
-                            <span class="screen-reader-text">Twitter</span>
-                        </a>
-                    </li>
-                    <li class="ss-dribbble">
-                        <a href="#0">
-                            <span class="screen-reader-text">Dribbble</span>
-                        </a>
-                    </li>
-                    <li class="ss-pinterest">
-                        <a href="#0">
-                            <span class="screen-reader-text">Behance</span>
-                        </a>
-                    </li>
-                </ul>
-
-            </nav> 
-
-            
-
-        </header> 
-
+ 
+<Sidebar></Sidebar>
         <div class="s-content">
-         
+        <div style={{ marginBottom: 16 }}>
+            
+        <TextField
+          select
+          label="Filter by field"
+          variant="outlined"
+          value={filterField}
+          onChange={handleFilterFieldChange}
+          style={{ minWidth: 150 }}
+        >
+          <MenuItem value="id">ID</MenuItem>
+          <MenuItem value="title">Title</MenuItem>
+          <MenuItem value="content">Content</MenuItem>
+          <MenuItem value="excerpt">Excerpt</MenuItem>
+          <MenuItem value="category">Category</MenuItem>
+        </TextField>
+        
+         <TextField
+          required
+          id="filled-required"
+          label={`Filter by ${filterField}`}
+          value={filterKeyword}
+          defaultValue="Hello World"
+          onChange={handleFilterKeywordChange}
+          variant="filled"
+          style={{marginLeft:"10px",fontSize:"30px"}}
+          
+        />
+
+      </div>
+
+      
             <div class="masonry-wrap">
 
                 <div class="masonry">
     
                     <div class="grid-sizer"></div>
                     
-                    <article class="masonry__brick entry format-standard animate-this">
-                        
-                        <div class="entry__thumb">
-                            <a href="single-standard.html" class="entry__thumb-link">
-                                <img src="images/thumbs/masonry/woodcraft-600.jpg" 
-                                        srcset="images/thumbs/masonry/woodcraft-600.jpg 1x, images/thumbs/masonry/woodcraft-1200.jpg 2x" alt="" />
-                            </a>
-                        </div>
-        
-                        <div class="entry__text">
-                            <div class="entry__header">
-    
-                                <h2 class="entry__title">  <a href="single-standard.html" style={{color:"black" }}>Latest Java update</a></h2>
-                                <div class="entry__meta">
-                                    <span class="entry__meta-cat">
-                                        <a href="category">Programming language</a> 
-                                        <a href="category">Technology</a>
-                                    </span>
-                                    <span class="entry__meta-date">
-                                        <a href="single-standard.html">Apr 29, 2024</a>
-                                    </span>
-                                </div>
-                                
-                            </div>
-                            <div class="entry__excerpt">
-                                <p>
-                               public static void main is not required in latest update of java , now you can use main function directly..
-                                </p>
-                            </div>
-                        </div>
-        
-                    </article> 
-    
                     <article class="masonry__brick entry format-quote animate-this">
-                            
-                        <div class="entry__thumb">
-                            <blockquote>
-                                <p>Good design is making something intelligible and memorable. Great design is making something memorable and meaningful.</p>
-    
-                                <cite>Dieter Rams</cite>
-                            </blockquote>
-                        </div>   
-        
-                    </article>  
-    
-                    <article class="masonry__brick entry format-standard animate-this">
-                            
-                        <div class="entry__thumb">
-                            <a href="single-standard.html" class="entry__thumb-link">
-                                <img src="images/thumbs/masonry/tulips-600.jpg" 
-                                        srcset="images/thumbs/masonry/tulips-600.jpg 1x, images/thumbs/masonry/tulips-1200.jpg 2x" alt="" />
-                            </a>
-                        </div>
-        
-                        <div class="entry__text">
-                            <div class="entry__header">
-                                <h2 class="entry__title"><a href="single-standard.html">10 Interesting Facts About Caffeine.</a></h2>
-                                <div class="entry__meta">
-                                    <span class="entry__meta-cat">
-                                        <a href="category">Health</a>
-                                    </span>
-                                    <span class="entry__meta-date">
-                                        <a href="single-standard.html">Apr 28, 2019</a>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="entry__excerpt">
-                                <p>
-                                Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua...
-                                </p>
-                            </div>
-                        </div>
-        
-                    </article>  
                     
+                    <div class="entry__thumb">
+                        <blockquote>
+                            <p>Practice makes man perfect</p>
     
-                    <article class="masonry__brick entry format-standard animate-this">
+                            <cite>Om gawde</cite>
+                        </blockquote>
+                    </div>   
     
-                        <div class="entry__thumb">
-                            <a href="single-standard.html" class="entry__thumb-link">
-                                <img src="images/thumbs/masonry/dew-600.jpg" 
-                                        srcset="images/thumbs/masonry/dew-600.jpg 1x, images/thumbs/masonry/dew-1200.jpg 2x" alt="" />
-                            </a>
-                        </div>
-        
-                        <div class="entry__text">
-                            <div class="entry__header">
-                                <h2 class="entry__title"><a href="single-standard.html">Health Benefits Of Morning Dew.</a></h2>
-                                <div class="entry__meta">
-                                    <span class="entry__meta-cat">
-                                        <a href="category">Lifestyle</a>
-                                        <a href="category">Health</a>
-                                    </span>
-                                    <span class="entry__meta-date">
-                                        <a href="single-standard.html">Apr 28, 2019</a>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="entry__excerpt">
-                                <p>
-                                Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua...
-                                </p>
-                            </div>
-                        </div>
-        
-                    </article>  
-    
-                    <article class="masonry__brick entry format-standard animate-this">
-    
+                </article>  
+            {filteredBlogs.map((blog) => (<article class="masonry__brick entry format-standard animate-this">
+                            
                             <div class="entry__thumb">
                                 <a href="single-standard.html" class="entry__thumb-link">
-                                    <img src="images/thumbs/masonry/rucksack-600.jpg" 
-                                            srcset="images/thumbs/masonry/rucksack-600.jpg 1x, images/thumbs/masonry/rucksack-1200.jpg 2x" alt="" />
+                                    <img src="images/thumbs/masonry/woodcraft-600.jpg" 
+                                            srcset="images/thumbs/masonry/woodcraft-600.jpg 1x, images/thumbs/masonry/woodcraft-1200.jpg 2x" alt="" />
                                 </a>
                             </div>
             
                             <div class="entry__text">
                                 <div class="entry__header">
-                                    
-                                    <h2 class="entry__title"><a href="single-standard.html">The Art Of Visual Storytelling.</a></h2>
-                                    
+        
+                                    <h2 class="entry__title">  <a href={`/author/${blog.author}/${blog.id}`} style={{color:"black" }}>{blog.title}</a></h2>
                                     <div class="entry__meta">
                                         <span class="entry__meta-cat">
-                                            <a href="category">Lifestyle</a>
-                                            <a href="category">Work</a>
+                                            <Link href={`/category/${blog.category}`}>Programming language</Link> 
+                                            <Link href={`/category/${blog.category}`}>{blog.category}</Link>
                                         </span>
                                         <span class="entry__meta-date">
-                                            <a href="single-standard.html">Apr 26, 2019</a>
+                                            <a  href={`/${blog.author}/${blog.id}`}>{blog.date}</a>
+                                        </span>
+                                        <span class="entry__meta-date">
+                                        <a href={`/author-search/${encodeURIComponent(blog.author)}`}>{blog.author}</a>
                                         </span>
                                     </div>
+                                    
                                 </div>
                                 <div class="entry__excerpt">
                                     <p>
-                                    Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua...
-                                    </p>
+                                  {blog.excerpt} </p>
                                 </div>
                             </div>
             
-                        </article>  
+                        </article>) ) }
+                        <article class="masonry__brick entry format-quote animate-this">
+                        
+                    <div class="entry__thumb">
+                        <blockquote>
+                            <p>Where there is a will there is a way</p>
+    
+                            <cite>Rayid</cite>
+                        </blockquote>
+                    </div>   
+    
+                </article>  
     
                     <article class="masonry__brick entry format-standard animate-this">
     
@@ -554,9 +492,9 @@ function Home() {
                         
                         <div class="entry__thumb">
                             <div class="link-wrap">
-                                <h2>Powerful web & Wordpress hosting. Guaranteed. Starting at $2.59/mo!</h2>
+                                <h2>I Love ReactJS</h2>
                                 <cite>
-                                    <a target="_blank" href="https://www.dreamhost.com/r.cgi?287326">https://www.dreamhost.com</a>
+                                    
                                 </cite>
                             </div>
                         </div>
@@ -693,10 +631,7 @@ function Home() {
         <footer class="s-footer">
             <div class="row">
                 <div class="column large-full footer__content">
-                    <div class="footer__copyright">
-                        <span>© Copyright Typerite 2019</span> 
-                        <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
-                    </div>
+                 
                 </div>
             </div>
 
@@ -707,10 +642,7 @@ function Home() {
 
     </div> 
  
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-
+ 
  
      </>
   );

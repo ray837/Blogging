@@ -18,9 +18,14 @@ import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 import SearchIcon from "@mui/icons-material/Search";
 import HomeIcon from '@mui/icons-material/Home';
 import { Link } from 'react-router-dom';
+import BlogFilter from "./components/filter";
+import CategoryLoader from "./components/CategoryLoader";
+ import {useState} from 'react'
+ import Resume from "./components/Resume";
+import BlogLoader from "./components/BlogLoader";
 function App() {
  
-
+ 
    
 
  
@@ -29,7 +34,10 @@ function App() {
   return (  <ColorModeContext.Provider value={colorMode}>   
     <ThemeProvider theme={theme}>
       <CssBaseline/>
+       <div style={{marginLeft:"400px",
        
+        marginTop:"9px"
+       }}>
         <IconButton  sx={{ ml: 2, flex: 1 }} onClick={colorMode.toggleColorMode}>
           {theme.palette.mode === "dark" ? (
             <DarkModeOutlinedIcon />
@@ -40,15 +48,21 @@ function App() {
         <IconButton>
           <NotificationsOutlinedIcon />
         </IconButton>
+        </div>
          
     <div className="App">
- 
+  
    <Routes>    <Route path="/" element={<Home></Home>} ></Route>
-            <Route path="/category" element={<Category ></Category>}></Route>
+            <Route path="/category/" element={<Category ></Category>}></Route>
              
-            
-              
-                    </Routes>
+            <Route path="/category/Tech" element={<CategoryLoader category="tech" />} />
+        <Route path="/category/Health" element={<CategoryLoader category="health" />} />
+        <Route path="/category/News" element={<CategoryLoader category="News" />} />
+        <Route path="/category/Travel" element={<CategoryLoader category="Travel" />} />
+        <Route path="/category/LifeStyle" element={<CategoryLoader category="LifeStyle" />} />    
+        <Route path="/author-search/:authorName" element={<CategoryLoader category="tech" />} />   
+        <Route path="/author/:authorName/:blogid" element={<BlogLoader category="tech" />} />   
+        <Route path="/resume" element={<Resume category="tech" />} />       </Routes>
                     
     </div>
     </ThemeProvider>
