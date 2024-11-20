@@ -2,7 +2,6 @@
  import {useState,useEffect} from 'react'
  import { Link, useParams } from 'react-router-dom';
  import {dataprovider} from '../data'
- import './Blog.css'
  export default function BlogLoader() {
  
    const { authorName } = useParams();
@@ -26,30 +25,8 @@
       }, [blogid]);
  
   return ( <>
-   <div id="features">
-    <div id="first_feature">
-<div id="image_holder">
-    
-</div>
-<h4>Garbage Collector<span>NEW</span></h4>
-<p>How Garbage collectors revolutionised memory mangement</p>
-    </div>
-    <div id="second_feature">
-<h2>Think</h2>
-<h3>Never stop <br /></h3>
-<h2>Learning!</h2>
-<p>A mind once stretched by a new idea never returns to its original dimensions.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Oliver Wendell</p>
-    </div>
-    <div id="third_feature">
-    <div id="image_holder2">
-    
-    </div>
-    <h4>BlueScreen Death<span>NEW</span></h4>
-    <p>How a simple programming mistake caused system outage accross globe.</p>
-    </div>
-
-</div>
-   <div class="s-content content blog-container" >
+   
+   <div class="s-content content">
             <main class="row content__page">
             {filteredBlogs.map((blog) => (
                 <article class="column large-full entry format-standard">
@@ -63,12 +40,12 @@
                         </div>
                     </div>
 
-                    <div class="content__page-header entry__header blog_title">
+                    <div class="content__page-header entry__header">
                         <h1 class="display-1 entry__title">
                        {blog.title}
                         </h1>
                         <ul class="entry__header-meta">
-                            <li class="author">By &nbsp;<a href="#0">{blog.author}</a></li>
+                            <li class="author">By<a href="#0">{blog.author}</a></li>
                             <li class="date">{blog.date}</li>
                             <li class="cat-links">
                                 <a href="#0"></a><a href="#0">{blog.category}</a>

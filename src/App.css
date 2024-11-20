@@ -1554,13 +1554,13 @@ input::-moz-focus-inner {
   max-width: 1000px;
 }
 
-.display-1 {
+/* .display-1 {
   font-size: 5.6rem;
   line-height: 1.143;
   letter-spacing: -0.05rem;
   margin-top: 0;
   margin-bottom: 0.8rem;
-}
+} */
 
 /* ------------------------------------------------------------------- 
  * ## animation stuff 

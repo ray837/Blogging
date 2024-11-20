@@ -1,0 +1,180 @@
+
+
+
+@font-face {
+    font-family: "Basefigh";
+    src: url('../fonts/NCL\ Basefigh\ Demo.otf');
+}
+
+
+@font-face {
+    font-family: 'can';
+    src: url('../fonts/canop.ttf');
+}
+
+@font-face {
+    font-family: 'dom';
+    src: url('../fonts/dom.ttf');
+}
+
+@font-face {
+    font-family: 'carte';
+    src: url('../fonts/CarteBlanche_Demo.ttf');
+}
+.blog-container{
+    background-color: #c4bcb3;
+}
+
+
+
+#features{
+    background-color: #c4bcb3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 60px;
+}
+#first_feature{
+    width: 30%;
+    height: 100%;
+   cursor: pointer;
+}
+
+#second_feature{
+    padding: 10px 30px;
+    width: 30%;
+    height: 100%;
+    border-right: 1px solid rgb(117, 117, 117);
+    border-left: 1px solid rgb(117, 117, 117);
+    text-align: center;
+    cursor: pointer;
+}
+
+#third_feature{
+    width: 30%;
+    height: 100%;
+    cursor: pointer;
+     
+}
+
+#image_holder{
+    width: 100%;
+    height: 13vw;
+    overflow: hidden;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('../images/history7.jpg');
+}
+
+#image_holder2{
+    width: 100%;
+    height: 13vw;
+    overflow: hidden;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('../images/blue.jpg');
+}
+
+#first_feature h4{
+    font-size: 22px;
+    margin-top:  20px;
+    margin-bottom:  10px;
+    font-family: 'can';
+}
+#first_feature h4 span{
+    background-color: rgba(255, 8, 0, 0.597);
+    color: #c4bcb3;
+    border-radius: 0.2em;
+    /* margin:6px; */
+    font-size: 13px;
+    margin-left: 10px;
+    padding: 2px;
+    font-family: 'can';
+}
+#first_feature p{
+    font-size: 19px;
+    color: #656565;
+    font-family: 'dom';
+}
+
+#second_feature h2{
+    font-size: 22px;
+    color: #656565;
+    font-family: 'dom';
+}
+
+#second_feature h3{
+    font-size: 32px;
+    color: #333333;
+    font-family: 'dom';
+}
+
+
+#second_feature p{
+    font-size: 17px;
+    margin-top: 10px;
+    color: #656565;
+    font-family: 'dom';
+}
+
+
+#third_feature h4{
+    font-size: 22px;
+    margin-top:  20px;
+    margin-bottom:  10px;
+    font-family: 'can';
+
+}
+#third_feature h4 span{
+    background-color: rgba(255, 8, 0, 0.597);
+    color: #c4bcb3;
+    border-radius: 0.2em;
+    /* margin:6px; */
+    font-size: 13px;
+    margin-left: 10px;
+    padding: 2px;
+    font-family: 'can';
+}
+#third_feature p{
+    font-size: 19px;
+    color: #656565;
+    font-family: 'dom';
+}
+.paper-background {
+    mix-blend-mode: multiply;
+    pointer-events: none;
+}
+
+.paper-background {
+    will-change: transform;
+}
+.paper-background {
+    z-index: 998;
+    opacity: .3;
+    background-image: url(https://uploads-ssl.webflow.com/5f2429f…/614f353…_6059a3e…_pt-texture-2.jpg);
+    background-position: 50%;
+    background-size: auto;
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+}
+
+
+
+
+/* .blog_title{
+   
+    width: 100%;
+    border-top: 1px solid #333333;
+} */
+
+.display-1{
+    font-size: 5.6rem;
+  line-height: 1.143;
+  letter-spacing: -0.05rem;
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+    font-family: 'carte';
+}

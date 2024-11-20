@@ -23,6 +23,7 @@ import CategoryLoader from "./components/CategoryLoader";
  import {useState} from 'react'
  import Resume from "./components/Resume";
 import BlogLoader from "./components/BlogLoader";
+import TopNav from './components/TopNav'
 function App() {
  
  
@@ -31,10 +32,11 @@ function App() {
  
 
   const [theme, colorMode] = useMode();
-  return (  <ColorModeContext.Provider value={colorMode}>   
+  return (  
+  <ColorModeContext.Provider value={colorMode}>   
     <ThemeProvider theme={theme}>
       <CssBaseline/>
-       <div style={{marginLeft:"400px",
+       {/* <div style={{marginLeft:"400px",
        
         marginTop:"9px"
        }}>
@@ -48,7 +50,8 @@ function App() {
         <IconButton>
           <NotificationsOutlinedIcon />
         </IconButton>
-        </div>
+        </div> */}
+        <TopNav></TopNav>
          
     <div className="App">
   
