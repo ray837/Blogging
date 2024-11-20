@@ -178,3 +178,29 @@
   margin-bottom: 0.8rem;
     font-family: 'carte';
 }
+
+
+@media  (max-width:768px){
+    #features{
+      
+        padding: 20px 10px;
+    }
+    #second_feature {
+        
+        padding: 10px 10px;
+    }
+
+    #second_feature p {
+font-size: 12px;
+    }
+
+    #first_feature p {
+font-size: 15px;
+
+    }
+
+    #third_feature p {
+        font-size: 15px;
+        
+            }
+}

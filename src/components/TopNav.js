@@ -16,7 +16,7 @@ export default  function TopNav(){
     
     return(<>
 <div id='nav' >
-<h5 id="">ENVIRONMENT</h5>
+<h5 id=""> </h5>
 <h5 id="Logo">Think Tank Tribe</h5>
 <div> 
 <IconButton  sx={{ ml: 2, flex: 1 }} onClick={colorMode.toggleColorMode}>
