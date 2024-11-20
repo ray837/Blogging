@@ -227,7 +227,29 @@ function Home() {
             <div></div>
         </div>
     </div> */}
- 
+   <div id="features">
+    <div id="first_feature">
+<div id="image_holder">
+    
+</div>
+<h4>Garbage Collector<span>NEW</span></h4>
+<p>How Garbage collectors revolutionised memory mangement</p>
+    </div>
+    <div id="second_feature">
+<h2>Think</h2>
+<h3>Never stop <br /></h3>
+<h2>Learning!</h2>
+<p>A mind once stretched by a new idea never returns to its original dimensions.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Oliver Wendell</p>
+    </div>
+    <div id="third_feature">
+    <div id="image_holder2">
+    
+    </div>
+    <h4>BlueScreen Death<span>NEW</span></h4>
+    <p>How a simple programming mistake caused system outage accross globe.</p>
+    </div>
+
+</div>
 <a href="#0" id="float" class="header__search-trigger'">
  
 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
@@ -237,7 +259,7 @@ function Home() {
     <div id="top" class="s-wrap site-wrapper">
  
  
-<Sidebar></Sidebar>
+{/* <Sidebar></Sidebar> */}
         <div class="s-content">
         <div style={{ marginBottom: 16 }}>
             

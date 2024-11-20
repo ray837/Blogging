@@ -51,10 +51,12 @@ function App() {
           <NotificationsOutlinedIcon />
         </IconButton>
         </div> */}
+         <div class="paper-background"><div class="paper-mode w-embed"> </div></div>
         <TopNav></TopNav>
-         
+        
     <div className="App">
   
+    
    <Routes>    <Route path="/" element={<Home></Home>} ></Route>
             <Route path="/category/" element={<Category ></Category>}></Route>
              

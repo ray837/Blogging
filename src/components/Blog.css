@@ -151,7 +151,7 @@
 .paper-background {
     z-index: 998;
     opacity: .3;
-    background-image: url(https://uploads-ssl.webflow.com/5f2429f…/614f353…_6059a3e…_pt-texture-2.jpg);
+    background-image: url('../images/paperoverlay.jpg');
     background-position: 50%;
     background-size: auto;
     position: absolute;

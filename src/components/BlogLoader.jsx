@@ -26,6 +26,7 @@
       }, [blogid]);
  
   return ( <>
+   
    <div id="features">
     <div id="first_feature">
 <div id="image_holder">

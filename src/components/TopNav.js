@@ -16,10 +16,11 @@ export default  function TopNav(){
     
     return(<>
 <div id='nav' >
+{/* <div class="paper-background-nav "><div class="paper-mode-nav w-embed-nav"> </div></div> */}
 <h5 id=""> </h5>
 <h5 id="Logo">Think Tank Tribe</h5>
 <div> 
-<IconButton  sx={{ ml: 2, flex: 1 }} onClick={colorMode.toggleColorMode}>
+{/* <IconButton  sx={{ ml: 2, flex: 1 }} onClick={colorMode.toggleColorMode}>
           {theme.palette.mode === "dark" ? (
             <DarkModeOutlinedIcon />
           ) : (
@@ -28,7 +29,7 @@ export default  function TopNav(){
         </IconButton>
         <IconButton>
           <NotificationsOutlinedIcon />
-        </IconButton>
+        </IconButton> */}
         </div>
        
 </div>
