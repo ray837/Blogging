@@ -85,7 +85,8 @@
                         </p>
 
                         <p style={{fontSize:"16px"}}>
-                        {blog.content}
+                        {/* {blog.content} */}
+                        <div dangerouslySetInnerHTML={{ __html: blog.content }}></div>
                         </p>
                      
                         <p>
@@ -96,10 +97,11 @@
                                      sizes="(max-width: 2000px) 100vw, 2000px" alt="" />
                         </p>
 
-                        <h2>{blog.subtopic}</h2>
+                        {/* <h2>{blog.subtopic}</h2> */}
     
                         <p style={{fontSize:"16px"}}>
-                        {blog.content}
+                        {/* {blog.content} */}
+                        {/* <div dangerouslySetInnerHTML={{ __html: blog.content }}></div> */}
                         </p>
                     
                         <blockquote style={{marginTop:"20px",marginBottom:"20px"}}> 
