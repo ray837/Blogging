@@ -301,21 +301,40 @@ function Home() {
                     
                     <article class="masonry__brick entry format-quote animate-this">
                     
-                    <div class="entry__thumb">
+                    {/* <div class="entry__thumb">
                         <blockquote>
                             <p>Practice makes man perfect</p>
     
                             <cite>Om gawde</cite>
                         </blockquote>
-                    </div>   
-    
+                    </div>    */}
+                    <div class="headline set3"><div href="#" draggable="false" rel="noopener" aria-label="work" class="head-wrap">
+                        <div class="head-title">Up<span class="dom">co</span>min<span class="dom">g</span> Next</div>
+                        </div>
+                        <div class="head-desc left">Fresh entry – A selected<br/>work from the latest <br/>digital releases.</div>
+                        {/* <div class="head-caption">
+                            <div class="item-title cap">Tip!<span class="text-span-2"></span></div>
+                        <div class="item-desc cap">Click on the image to explore</div>
+                    </div> */}
+                    </div>
+         
                 </article>  
             {filteredBlogs.map((blog) => (<article class="masonry__brick entry format-standard animate-this">
                             
                             <div class="entry__thumb">
-                                <a href="single-standard.html" class="entry__thumb-link">
-                                    <img src="images/thumbs/masonry/woodcraft-600.jpg" 
-                                            srcset="images/thumbs/masonry/woodcraft-600.jpg 1x, images/thumbs/masonry/woodcraft-1200.jpg 2x" alt="" />
+                                <a  href={`https://thinktanktribe.netlify.app/author/${blog.author.split(' ')[0]}%20${blog.author.split(' ')[1]}/${blog.id}`}
+  class="entry__thumb-link">
+                                <div
+      style={{
+        backgroundImage: `url(${blog.image})`,
+        backgroundSize: 'cover',  
+        // backgroundPosition: 'center',  
+        width: '90%',  
+        height: '200px', 
+      }}
+    />
+                                    {/* <img src="https://barkigo.com/history7.jpg" 
+                                            srcset="images/thumbs/masonry/woodcraft-600.jpg 1x, images/thumbs/masonry/woodcraft-1200.jpg 2x" alt="" /> */}
                                 </a>
                             </div>
             

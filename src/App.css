@@ -124,6 +124,21 @@ a:active {
 /* ------------------------------------------------------------------- 
  * ## typography
  * ------------------------------------------------------------------- */
+
+ @font-face {
+  font-family: 'can';
+  src: url('./fonts/canop.ttf');
+}
+
+@font-face {
+  font-family: 'dom';
+  src: url('./fonts/dom.ttf');
+}
+
+@font-face {
+  font-family: 'carte';
+  src: url('./fonts/CarteBlanche_Demo.ttf');
+}
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: "Heebo", sans-serif;
   font-weight: 500;
@@ -1795,7 +1810,7 @@ input::-moz-focus-inner {
 
 .masonry .entry__text {
   padding: 3.2rem 2.8rem 4rem;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
 }
 
 .masonry .entry__text p {
@@ -1808,10 +1823,12 @@ input::-moz-focus-inner {
   line-height: 1.231;
   margin-top: 0;
   margin-bottom: 0.8rem;
+  
 }
 
 .masonry .entry__title a {
   color: #000000;
+  font-family: 'dom';
 }
 
 .masonry .entry__title a:hover,
@@ -3156,6 +3173,7 @@ font-size: 4.6rem;
 .entry__header-meta .cat-links a:last-child::after {
   display: none;
 }
+
 
 /* -------------------------------------------------------------------
  * ## post tags
@@ -5788,4 +5806,71 @@ p {
   pointer-events: none; /* Ensure it doesn’t interfere with content clicks */
 }
 
- 
+.headline.set3 {
+  width: auto;
+  border-left-style: none;
+  border-right-style: none;
+  flex: 1;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-right: 10px;
+  padding-left: 0;
+  padding-right: 10px;
+  display: flex
+;
+}
+.headline {
+  width: 29vw;
+  height: 100%;
+  text-align: center;
+  border-left: 1px solid rgba(29, 29, 27, .5);
+  border-right: 1px solid rgba(29, 29, 27, .5);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left:0;
+  padding-right: 0;
+  position: relative;
+}
+#dddd{
+  background-image: url(https://srv1639-files.hstgr.io/9d4f099a2ca1cc85/files/public_html/history7.jpg);
+  width: 29vw;
+  height: 100%;
+}
+
+@font-face {
+  font-family: 'can';
+  src: url('./fonts/canop.ttf');
+}
+
+@font-face {
+  font-family: 'dom';
+  src: url('./fonts/dom.ttf');
+}
+
+@font-face {
+  font-family: 'carte';
+  src: url('./fonts/CarteBlanche_Demo.ttf');
+}
+.head-title {
+  letter-spacing: -.05em;
+  text-transform: uppercase;
+  font-family: 'can';
+  font-size: 4.5vw;
+  font-weight: 400;
+  line-height: 4.5vw;
+}
+.head-desc.left {
+  text-align: left;
+  font-size: 2.6vw;
+  line-height: 3vw;
+}
+.head-desc {
+  font-family: 'dom';
+  text-align: center;
+  letter-spacing: -.03em;
+  margin-top: 1vw;
+  font-size: 2.6vw;
+  line-height: 3vw;
+  
+}
