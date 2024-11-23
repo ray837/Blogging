@@ -3052,7 +3052,8 @@ body.search-is-visible {
 @media screen and (max-width:1600px) {
   .s-content,
   .s-footer {
-    padding-left: 320px;
+    padding-left: 210px;
+    padding-right: 190px;
   }
 
 }
@@ -3060,8 +3061,8 @@ body.search-is-visible {
 @media screen and (max-width:1200px) {
   .s-content,
   .s-footer {
-    padding-left: 290px;
-    padding-right: 80px;
+    padding-left: 200px;
+    padding-right: 90px;
   }
 
 }
@@ -3089,8 +3090,11 @@ body.search-is-visible {
 }
 
 @media screen and (max-width:600px) {
+  .display-1 {
+font-size: 4.6rem;
+  }
   .s-content {
-    padding-top: 12.6rem;
+    padding-top: 1rem;
   }
 
   .content__page {
@@ -5783,3 +5787,5 @@ p {
   height: 100%;
   pointer-events: none; /* Ensure it doesn’t interfere with content clicks */
 }
+
+ 

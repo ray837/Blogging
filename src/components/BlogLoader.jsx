@@ -27,7 +27,7 @@
  
   return ( <>
    
-   <div id="features">
+   {/* <div id="features">
     <div id="first_feature">
 <div id="image_holder">
     
@@ -49,7 +49,7 @@
     <p>How a simple programming mistake caused system outage accross globe.</p>
     </div>
 
-</div>
+</div> */}
    <div class="s-content content blog-container" >
             <main class="row content__page">
             {filteredBlogs.map((blog) => (
@@ -84,7 +84,7 @@
                         {blog.excerpt}
                         </p>
 
-                        <p style={{fontSize:"16px"}}>
+                        <p style={{fontSize:"16px"}} >
                         {/* {blog.content} */}
                         <div dangerouslySetInnerHTML={{ __html: blog.content }}></div>
                         </p>
@@ -108,10 +108,10 @@
                             <p style={{marginLeft:"10px"}}>
                            {blog.intro}
                             </p>
-                            <cite>Om</cite>
+                            {/* <cite>Om</cite> */}
                         </blockquote>
     
-                        <p style={{fontSize:"16px"}}>
+                        {/* <p style={{fontSize:"16px"}}>
                         A blogging site offers a dynamic platform for individuals and businesses to share insights, experiences, and expertise with a global audience. It serves as a digital hub where creativity meets communication, enabling content creators to express ideas, engage with readers, and build communities around shared interests. Through regular updates and interactions, bloggers can establish authority in their niche, attract like-minded individuals, and foster meaningful discussions. Moreover, blogging sites enhance visibility on search engines, driving organic traffic and expanding reach across diverse demographics. Whether aiming to educate, entertain, or inspire, the versatility of a blogging site empowers users to craft compelling narratives, showcase their unique perspectives, and contribute valuable content to the online landscape."
 
 Does this capture what you had in mind? Let me know if you'd like any adjustments or if there's more you'd like to add!
@@ -137,7 +137,7 @@ In today's digital age, where information overload is common, stands out as a be
 
 Join us on this journey of knowledge, inspiration, and community. Together, let's explore the world of ideas and share stories that matter. Welcome to [Your Blogging Site Name], where every blog is a window into a world of possibilities.
                         </p>
-         
+          */}
                        
 
                         <p class="entry__tags">
