@@ -57,10 +57,20 @@
 
                     <div class="media-wrap entry__media">
                         <div class="entry__post-thumb">
-                            <img src="images/thumbs/single/standard/standard-1000.jpg" 
+
+                        <div
+      style={{
+        backgroundImage: `url(${blog.image})`,
+        backgroundSize: 'cover',  
+        // backgroundPosition: 'center',  
+        width: '90%',  
+        height: '430px', 
+      }}
+    />
+                            {/* <img src="images/thumbs/single/standard/standard-1000.jpg" 
                                  srcset="images/thumbs/single/standard/standard-2000.jpg 2000w, 
                                          images/thumbs/single/standard/standard-1000.jpg 1000w, 
-                                         images/thumbs/single/standard/standard-500.jpg 500w" sizes="(max-width: 2000px) 100vw, 2000px" alt=""/>
+                                         images/thumbs/single/standard/standard-500.jpg 500w" sizes="(max-width: 2000px) 100vw, 2000px" alt=""/> */}
                         </div>
                     </div>
 
