@@ -25,6 +25,11 @@
     background-color: #c4bcb3;
 }
 
+.entry__post-thumb{
+    display: flex;
+    justify-content: center;
+}
+
 
 
 #features{

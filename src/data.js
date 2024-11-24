@@ -1,16 +1,43 @@
 const blogData =  [
-    {
-      id: 1,
-      title: "Climate Change Report Highlights Urgent Need for Action",
-      category: "News",
-      intro: "In a world increasingly defined by its environmental challenges, the latest climate change report serves as a clarion call for immediate and decisive action.",
-      content: "The comprehensive analysis underscores the accelerating pace of global warming, the intensifying frequency of extreme weather events, and the profound impacts on ecosystems and human societies. This report is not just a scientific document; it is a roadmap urging governments, businesses, and individuals to take meaningful steps to mitigate the climate crisis. The average global temperature has already risen by 1.2 degrees Celsius above pre-industrial levels. If current trends continue, we are on track to surpass the critical threshold of 1.5 degrees Celsius within the next decade. The incidence of hurricanes, wildfires, droughts, and floods has increased dramatically. These events are not only more frequent but also more severe, causing unprecedented damage to infrastructure and loss of life.",
-      image: "https://barkigo.com/history7.jpg",
-      excerpt: "The government has unveiled new climate policies aimed at combating global warming.",
-      author: "Robert Jennifer",
-      date: "Apr 28, 2019",
-      subtopic: "Environmental Challenges"
-    },
+  {
+    "id": 11,
+    "title": "The Batman of Programming: Garbage Collectors",
+    "category": "Tech",
+    "intro": "Garbage collectors (GC) are indispensable tools in programming, ensuring efficient and automatic memory management to optimize application performance and prevent memory leaks.",
+    "content": "Garbage collectors (GC) automate memory management by<span class='underlined underlined--reverse'> reclaiming unused memory </span>and preventing issues like <a class='underlined underlined--thin' href='https://en.wikipedia.org/wiki/Memory_leak' target='_blank'>memory leaks</a> . By tracking object lifetimes, GCs determine which objects are still accessible and reclaim memory from unreachable ones, ensuring optimal performance.<br/><br/><b>Purpose of Garbage Collectors</b><br/><br/>1. <b>Automatic Memory Management:</b> Reclaims unused memory space that is no longer needed, reducing manual memory handling.<br/>2. <b>Tracking Object Lifetimes:</b> Tracks objects that are still reachable and reclaims memory from unreachable ones.<br/>3. <b>Avoiding Memory Leaks:</b> Prevents memory from being consumed by unused data, freeing up resources for active processes.<br/><br/><b>How it Works</b><br/>The GC periodically checks for unused memory in the heap, where all dynamically allocated variables are stored. Key concepts include:<br/>- <b>Heap:</b> Stores dynamically allocated memory used by the program.<br/>- <b>Roots:</b> Variables or references accessible from the stack, global variables, or CPU registers.<br/><br/><b>Garbage Collection Algorithms</b><br/><br/>1. <b>Mark-and-Sweep:</b><br/>   - <b>Mark Phase:</b> The GC starts from the roots, traverses the object graph, and marks all reachable objects.<br/>   - <b>Sweep Phase:</b> Scans the heap for unmarked objects and reclaims their memory.<br/><br/>2. <b>Generational Garbage Collection:</b><br/>   - Divides objects into generations based on age.<br/>   - Focuses on short-lived objects (young generation), reducing overhead by collecting older objects (old generation) less frequently.<br/><br/><b>Fun Facts</b><br/>- <b>Java's Influence on GC:</b> Java popularized automatic memory management through its garbage-collected runtime environment. The JVM’s garbage collector reclaims memory from unused objects, ensuring efficient resource utilization.<br/>- <b>GC Pauses:</b> Garbage collection can cause 'stop-the-world' pauses, halting program execution temporarily. Reducing these pauses is crucial for high-performance applications.<br/><br/>Garbage collectors exemplify the practical application of graph traversal algorithms, providing an essential service in modern programming by balancing performance, efficiency, and memory optimization.",
+    image: "https://barkigo.com/history7.jpg",
+    "excerpt": "Garbage collectors ensure efficient memory management in programming by reclaiming unused memory and preventing leaks.",
+    "author": "Rayid Ahmed",
+    "date": "May 24, 2023",
+    "subtopic": "Garbage Collectors"
+  },
+  {
+    id: 1,
+    title: "Climate Change Report Highlights Urgent Need for Action",
+    category: "News",
+    intro: "In a world increasingly defined by its environmental challenges, the latest climate change report serves as a clarion call for immediate and decisive action.",
+    content: "The comprehensive analysis underscores the accelerating pace of global warming, the intensifying frequency of extreme weather events, and the profound impacts on ecosystems and human societies. This report is not just a scientific document; it is a roadmap urging governments, businesses, and individuals to take meaningful steps to mitigate the climate crisis. The average global temperature has already risen by 1.2 degrees Celsius above pre-industrial levels. If current trends continue, we are on track to surpass the critical threshold of 1.5 degrees Celsius within the next decade. The incidence of hurricanes, wildfires, droughts, and floods has increased dramatically. These events are not only more frequent but also more severe, causing unprecedented damage to infrastructure and loss of life.",
+    image: "https://barkigo.com/clouds.jpg",
+    excerpt: "The government has unveiled new climate policies aimed at combating global warming.",
+    author: "Robert Jennifer",
+    date: "Apr 28, 2019",
+    subtopic: "Environmental Challenges"
+  },
+  
+{
+  "id": 12,
+  "title": "Why Rust Stands Out in Tech",
+  "category": "Tech",
+  "intro": "Rust, with its innovative memory management techniques and performance-first approach, has emerged as a leading programming language for building fast and reliable software.",
+  "content": "Rust distinguishes itself through its absence of a garbage collector and its focus on performance, safety, and efficient memory management.<br/><br/>Unlike traditional languages that rely on garbage collection or manual memory management, Rust employs a compile-time memory model based on ownership, borrowing, and references. This eliminates runtime overhead and common programming errors like memory leaks, dangling pointers, and race conditions.<br/><br/><b>Why Rust is Faster?</b><br/><br/>1. <b>Absence of Garbage Collection (GC) Overhead:</b><br/>- Most languages with GC introduce runtime pauses for memory cleanup, which can cause performance hiccups in latency-sensitive applications. Rust avoids this overhead entirely by handling memory at compile-time, offering more predictable and consistent performance.<br/>- Rust's memory model relies on <b>ownership</b>, which ensures that every piece of heap data has a single owner determined at compile-time, eliminating the need for runtime garbage collection.<br/><br/>2. <b>Mutability Control:</b><br/>- Unlike most languages where variables are mutable by default, Rust treats variables as immutable unless explicitly declared mutable (e.g., <code>let mut x = 10;</code>).<br/>- This immutability reduces the need for synchronization mechanisms in concurrent programming, making Rust faster and less prone to race conditions.<br/><br/>3. <b>Stack and Heap Management:</b><br/>- Rust uses the <b>stack</b> for fixed-size data and the <b>heap</b> for dynamic-sized data, much like C/C++.<br/>- Stack allocation is faster because the size is predictable and the memory is managed automatically. For heap data, Rust maintains the address, length, and capacity of the allocation in the stack for efficient management.<br/>- While heap operations can be slower, Rust minimizes the performance impact through clear ownership and borrowing rules.<br/><br/>4. <b>Ownership Model:</b><br/>- Ownership is a cornerstone of Rust’s memory management. Each piece of heap data is <i>owned</i> by a variable, and when the owner goes out of scope, the memory is freed.<br/>- <b>Rules of Ownership:</b><br/>-- If ownership is transferred (e.g., assigning one variable to another), the original variable loses its ownership.<br/>-- Data cannot have multiple owners, preventing dangling pointers and double-free errors.<br/><br/>5. <b>Borrowing and References:</b><br/>- Borrowing allows variables to temporarily <i>borrow</i> ownership without taking it over. Borrowing can be immutable (multiple borrowers) or mutable (only one borrower at a time).<br/>- References provide a way to access data without transferring ownership, enabling safe and efficient data access.<br/><br/><b>Fun Facts about Rust</b><br/>- Rust’s compile-time memory management rules make it ideal for systems programming, where performance and safety are critical.<br/>- By eliminating runtime garbage collection, Rust ensures minimal latency and maximized efficiency.<br/><br/>Rust's design principles make it a powerful choice for developers seeking speed, reliability, and safety without sacrificing control over memory management. Whether for embedded systems, web assembly, or large-scale applications, Rust continues to gain popularity for its innovative approach to programming.",
+  "image": "https://barkigo.com/rust.jpeg",
+  "excerpt": "Rust's memory management and performance-first approach make it a standout language for building fast, reliable software.",
+  "author": "Rayid Ahmed",
+  "date": "May 25, 2024",
+  "subtopic": "Rust Programming"
+}
+,
+    
     {
       id: 2,
       title: "10 Interesting Facts About Caffeine",
@@ -119,34 +146,9 @@ excerpt: "The solar system is a vast expanse of celestial bodies, each with its 
 author: "Neil Armstrong",
 date: "Aug 29, 2017",
 subtopic: "Planetary Exploration"
-},
-{
-  "id": 11,
-  "title": "The Batman of Programming: Garbage Collectors",
-  "category": "Tech",
-  "intro": "Garbage collectors (GC) are indispensable tools in programming, ensuring efficient and automatic memory management to optimize application performance and prevent memory leaks.",
-  "content": "Garbage collectors (GC) automate memory management by<span class='underlined underlined--reverse'> reclaiming unused memory </span>and preventing issues like <a class='underlined underlined--thin' href='https://en.wikipedia.org/wiki/Memory_leak' target='_blank'>memory leaks</a> . By tracking object lifetimes, GCs determine which objects are still accessible and reclaim memory from unreachable ones, ensuring optimal performance.<br/><br/><b>Purpose of Garbage Collectors</b><br/><br/>1. <b>Automatic Memory Management:</b> Reclaims unused memory space that is no longer needed, reducing manual memory handling.<br/>2. <b>Tracking Object Lifetimes:</b> Tracks objects that are still reachable and reclaims memory from unreachable ones.<br/>3. <b>Avoiding Memory Leaks:</b> Prevents memory from being consumed by unused data, freeing up resources for active processes.<br/><br/><b>How it Works</b><br/>The GC periodically checks for unused memory in the heap, where all dynamically allocated variables are stored. Key concepts include:<br/>- <b>Heap:</b> Stores dynamically allocated memory used by the program.<br/>- <b>Roots:</b> Variables or references accessible from the stack, global variables, or CPU registers.<br/><br/><b>Garbage Collection Algorithms</b><br/><br/>1. <b>Mark-and-Sweep:</b><br/>   - <b>Mark Phase:</b> The GC starts from the roots, traverses the object graph, and marks all reachable objects.<br/>   - <b>Sweep Phase:</b> Scans the heap for unmarked objects and reclaims their memory.<br/><br/>2. <b>Generational Garbage Collection:</b><br/>   - Divides objects into generations based on age.<br/>   - Focuses on short-lived objects (young generation), reducing overhead by collecting older objects (old generation) less frequently.<br/><br/><b>Fun Facts</b><br/>- <b>Java's Influence on GC:</b> Java popularized automatic memory management through its garbage-collected runtime environment. The JVM’s garbage collector reclaims memory from unused objects, ensuring efficient resource utilization.<br/>- <b>GC Pauses:</b> Garbage collection can cause 'stop-the-world' pauses, halting program execution temporarily. Reducing these pauses is crucial for high-performance applications.<br/><br/>Garbage collectors exemplify the practical application of graph traversal algorithms, providing an essential service in modern programming by balancing performance, efficiency, and memory optimization.",
-  image: "https://barkigo.com/history7.jpg",
-  "excerpt": "Garbage collectors ensure efficient memory management in programming by reclaiming unused memory and preventing leaks.",
-  "author": "Rayid Ahmed",
-  "date": "May 24, 2023",
-  "subtopic": "Garbage Collectors"
-}
+} 
 
-,
-{
-  "id": 12,
-  "title": "Why Rust Stands Out in Tech",
-  "category": "Tech",
-  "intro": "Rust, with its innovative memory management techniques and performance-first approach, has emerged as a leading programming language for building fast and reliable software.",
-  "content": "Rust distinguishes itself through its absence of a garbage collector and its focus on performance, safety, and efficient memory management.<br/><br/>Unlike traditional languages that rely on garbage collection or manual memory management, Rust employs a compile-time memory model based on ownership, borrowing, and references. This eliminates runtime overhead and common programming errors like memory leaks, dangling pointers, and race conditions.<br/><br/><b>Why Rust is Faster?</b><br/><br/>1. <b>Absence of Garbage Collection (GC) Overhead:</b><br/>- Most languages with GC introduce runtime pauses for memory cleanup, which can cause performance hiccups in latency-sensitive applications. Rust avoids this overhead entirely by handling memory at compile-time, offering more predictable and consistent performance.<br/>- Rust's memory model relies on <b>ownership</b>, which ensures that every piece of heap data has a single owner determined at compile-time, eliminating the need for runtime garbage collection.<br/><br/>2. <b>Mutability Control:</b><br/>- Unlike most languages where variables are mutable by default, Rust treats variables as immutable unless explicitly declared mutable (e.g., <code>let mut x = 10;</code>).<br/>- This immutability reduces the need for synchronization mechanisms in concurrent programming, making Rust faster and less prone to race conditions.<br/><br/>3. <b>Stack and Heap Management:</b><br/>- Rust uses the <b>stack</b> for fixed-size data and the <b>heap</b> for dynamic-sized data, much like C/C++.<br/>- Stack allocation is faster because the size is predictable and the memory is managed automatically. For heap data, Rust maintains the address, length, and capacity of the allocation in the stack for efficient management.<br/>- While heap operations can be slower, Rust minimizes the performance impact through clear ownership and borrowing rules.<br/><br/>4. <b>Ownership Model:</b><br/>- Ownership is a cornerstone of Rust’s memory management. Each piece of heap data is <i>owned</i> by a variable, and when the owner goes out of scope, the memory is freed.<br/>- <b>Rules of Ownership:</b><br/>-- If ownership is transferred (e.g., assigning one variable to another), the original variable loses its ownership.<br/>-- Data cannot have multiple owners, preventing dangling pointers and double-free errors.<br/><br/>5. <b>Borrowing and References:</b><br/>- Borrowing allows variables to temporarily <i>borrow</i> ownership without taking it over. Borrowing can be immutable (multiple borrowers) or mutable (only one borrower at a time).<br/>- References provide a way to access data without transferring ownership, enabling safe and efficient data access.<br/><br/><b>Fun Facts about Rust</b><br/>- Rust’s compile-time memory management rules make it ideal for systems programming, where performance and safety are critical.<br/>- By eliminating runtime garbage collection, Rust ensures minimal latency and maximized efficiency.<br/><br/>Rust's design principles make it a powerful choice for developers seeking speed, reliability, and safety without sacrificing control over memory management. Whether for embedded systems, web assembly, or large-scale applications, Rust continues to gain popularity for its innovative approach to programming.",
-  "image": "#",
-  "excerpt": "Rust's memory management and performance-first approach make it a standout language for building fast, reliable software.",
-  "author": "Rayid Ahmed",
-  "date": "May 25, 2024",
-  "subtopic": "Rust Programming"
-}
-
+ 
  
 ];
 console.log("insided")

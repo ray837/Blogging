@@ -1,6 +1,6 @@
  
 import '../App.css';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import Sidebar from './Sidebar';
 import $ from 'jquery';
 import Slider from 'react-slick';
@@ -13,10 +13,11 @@ import 'google-code-prettify/bin/prettify.min.js'; // Import the prettify librar
 import 'google-code-prettify/bin/prettify.min.css'
 import { Card, CardContent, Typography, Grid, TextField, MenuItem } from '@mui/material';
 import { dataprovider } from '../data';
+
 const blogData =  dataprovider();
 
 function Home() {
-
+    const {category}=useParams();
     const [filteredBlogs, setFilteredBlogs] = React.useState(blogData);
     const [filterKeyword, setFilterKeyword] = React.useState('');
     const [filterCategory, setFilterCategory] = React.useState('');
@@ -227,6 +228,10 @@ function Home() {
             <div></div>
         </div>
     </div> */}
+
+<div className='category-holder'>
+<h1 id="Category-title">{category}</h1>
+</div >
    <div id="features">
     <div id="first_feature">
 <div id="image_holder">
@@ -250,6 +255,7 @@ function Home() {
     </div>
 
 </div>
+ 
 <a href="#0" id="float" class="header__search-trigger'">
  
 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
@@ -311,7 +317,7 @@ function Home() {
                     <div class="headline set3"><div href="#" draggable="false" rel="noopener" aria-label="work" class="head-wrap">
                         <div class="head-title">Up<span class="dom">co</span>min<span class="dom">g</span> Next</div>
                         </div>
-                        <div class="head-desc left">Fresh entry – A selected<br/>work from the latest <br/>digital releases.</div>
+                        <div class="head-desc left">Scalable systems – How softwares are designed served to mass public and common practices.</div>
                         {/* <div class="head-caption">
                             <div class="item-title cap">Tip!<span class="text-span-2"></span></div>
                         <div class="item-desc cap">Click on the image to explore</div>
@@ -329,8 +335,8 @@ function Home() {
         backgroundImage: `url(${blog.image})`,
         backgroundSize: 'cover',  
         // backgroundPosition: 'center',  
-        width: '90%',  
-        height: '200px', 
+        width: '100%',  
+        height: '210px', 
       }}
     />
                                     {/* <img src="https://barkigo.com/history7.jpg" 

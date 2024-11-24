@@ -5832,11 +5832,7 @@ p {
   padding-right: 0;
   position: relative;
 }
-#dddd{
-  background-image: url(https://srv1639-files.hstgr.io/9d4f099a2ca1cc85/files/public_html/history7.jpg);
-  width: 29vw;
-  height: 100%;
-}
+ 
 
 @font-face {
   font-family: 'can';
@@ -5852,6 +5848,24 @@ p {
   font-family: 'carte';
   src: url('./fonts/CarteBlanche_Demo.ttf');
 }
+
+@font-face {
+  font-family: 'casa';
+  src: url('./fonts/BrownCasalova_Demo.ttf');
+}
+@font-face {
+  font-family: 'scoth';
+  src: url('./fonts/scoth-brace.regular.ttf');
+}
+@font-face {
+  font-family: 'boras';
+  src: url('./fonts/Boraos\ DEMO.ttf');
+}
+
+/* @font-face {
+  font-family: 'oliver';
+  src: url('./fonts/aurademo.regular.ttf');
+} */
 .head-title {
   letter-spacing: -.05em;
   text-transform: uppercase;
@@ -5873,4 +5887,22 @@ p {
   font-size: 2.6vw;
   line-height: 3vw;
   
+}
+
+#Category-title{
+  font-family: 'casa';
+  font-size: 8vw;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.76);
+}
+.category-holder{
+  /* border-bottom: 1px solid black; */
+  padding: 25px 25px;
+
+}
+
+.entry__excerpt p{
+  font-family: 'carte';
+ 
+  font-weight: 20;
 }

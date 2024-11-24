@@ -63,8 +63,8 @@
         backgroundImage: `url(${blog.image})`,
         backgroundSize: 'cover',  
         // backgroundPosition: 'center',  
-        width: '90%',  
-        height: '430px', 
+        width: '60%',  
+        height: '290px', 
       }}
     />
                             {/* <img src="images/thumbs/single/standard/standard-1000.jpg" 
