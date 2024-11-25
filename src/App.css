@@ -3069,8 +3069,8 @@ body.search-is-visible {
 @media screen and (max-width:1600px) {
   .s-content,
   .s-footer {
-    padding-left: 210px;
-    padding-right: 190px;
+    padding-left: 110px;
+    padding-right: 110px;
   }
 
 }
