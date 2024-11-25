@@ -232,7 +232,7 @@ function Home() {
 <div className='category-holder'>
 <h1 id="Category-title">{category}</h1>
 </div >
-   <div id="features">
+   {/* <div id="features">
     <div id="first_feature">
 <div id="image_holder">
     
@@ -254,7 +254,7 @@ function Home() {
     <p>How a simple programming mistake caused system outage accross globe.</p>
     </div>
 
-</div>
+</div> */}
  
 <a href="#0" id="float" class="header__search-trigger'">
  
@@ -267,7 +267,7 @@ function Home() {
  
 {/* <Sidebar></Sidebar> */}
         <div class="s-content">
-        <div style={{ marginBottom: 16 }}>
+        {/* <div style={{ marginBottom: 16 }}>
             
         <TextField
           select
@@ -296,7 +296,7 @@ function Home() {
           
         />
 
-      </div>
+      </div> */}
 
       
             <div class="masonry-wrap">
@@ -325,7 +325,13 @@ function Home() {
                     </div>
          
                 </article>  
-            {filteredBlogs.map((blog) => (<article class="masonry__brick entry format-standard animate-this">
+            {filteredBlogs.map((blog,index) => {
+                if(index===4){
+                    
+                    return <article class="masonry__brick entry format-standard animate-this"> <div id="stamp"></div></article>
+                }else{
+                
+                return <article class="masonry__brick entry format-standard animate-this">
                             
                             <div class="entry__thumb">
                                 <a  href={`https://thinktanktribe.netlify.app/author/${blog.author.split(' ')[0]}%20${blog.author.split(' ')[1]}/${blog.id}`}
@@ -368,7 +374,9 @@ function Home() {
                                 </div>
                             </div>
             
-                        </article>) ) }
+                        </article>
+                    
+ } }) }
                         <article class="masonry__brick entry format-quote animate-this">
                         
                     <div class="entry__thumb">
