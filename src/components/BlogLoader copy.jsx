@@ -2,6 +2,7 @@
  import {useState,useEffect} from 'react'
  import { Link, useParams } from 'react-router-dom';
  import {dataprovider} from '../data'
+  
  export default function BlogLoader() {
  
    const { authorName } = useParams();
