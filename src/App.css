@@ -1898,7 +1898,7 @@ input::-moz-focus-inner {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background: #ffffff;
+  background: transparent;
   padding: 2.4rem 3rem 5.6rem;
   min-height: 324px;
   width: 100%;

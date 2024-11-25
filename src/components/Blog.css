@@ -227,7 +227,18 @@
     margin-left:30px;
     margin-bottom:30px;
 }
-
+#finance{
+    width: 800px;
+    height:320px;
+    /* background-color: black; */
+    position: relative;
+    background-image: url('../images/finance.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left:30px;
+    margin-bottom:30px;
+    cursor: pointer;
+}
 @media  (max-width:768px){
     #features{
       

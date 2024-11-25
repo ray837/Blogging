@@ -329,6 +329,8 @@ function Home() {
                 if(index===4){
                     
                     return <article class="masonry__brick entry format-standard animate-this"> <div id="stamp"></div></article>
+                }else if(index==7){
+                    return <article class="masonry__brick entry format-standard animate-this"> <div id="finance"></div></article>
                 }else{
                 
                 return <article class="masonry__brick entry format-standard animate-this">
