@@ -425,7 +425,7 @@ function Home() {
     
                     </article> 
     
-                    <article class="masonry__brick entry format-audio animate-this">
+                    {/* <article class="masonry__brick entry format-audio animate-this">
     
                         <div class="entry__thumb">
                             <a href="single-audio.html" class="entry__thumb-link">
@@ -659,7 +659,7 @@ function Home() {
                             </div>
                         </div>
     
-                    </article> 
+                    </article>  */}
     
                 </div> 
 
