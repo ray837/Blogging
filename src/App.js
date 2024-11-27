@@ -59,7 +59,7 @@ function App() {
   
     
    <Routes>    
-    <Route path="/main" element={<Main></Main>}></Route>
+    <Route path="/Home" element={<Main></Main>}></Route>
     <Route path="/" element={<Home></Home>} ></Route>
     <Route path="/:category" element={<Home ></Home>} ></Route>
     

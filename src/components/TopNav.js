@@ -16,7 +16,7 @@ export default  function TopNav(){
     const [theme, colorMode] = useMode();
     const navigate = useNavigate();
     const navigateHome = () => {
-      navigate('/');
+      navigate('/Home');
     };
     return(<>
 <div id='nav' >

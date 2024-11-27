@@ -1,6 +1,7 @@
  
 import '../App.css';
-import { Link, useParams } from 'react-router-dom';
+import { Link, useParams ,useNavigate} from 'react-router-dom';
+
 import Sidebar from './Sidebar';
 import $ from 'jquery';
 import Slider from 'react-slick';
@@ -17,6 +18,7 @@ import { dataprovider } from '../data';
 const blogData =  dataprovider();
 
 function Home() {
+    
     const {category}=useParams();
     const [filteredBlogs, setFilteredBlogs] = React.useState(blogData);
     const [filterKeyword, setFilterKeyword] = React.useState('');

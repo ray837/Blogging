@@ -54,6 +54,10 @@ hr{
 
   
 }
+/* 
+.Blog section{
+    cursor: pointer;
+} */
 
 #philo{
     margin-right: 50px;
@@ -62,6 +66,10 @@ hr{
     display: flex;
     justify-content: space-between;
     padding:20px 30px;
+    
+}
+.Technology{
+    cursor: pointer;
 }
 .image{
     /* background-image: url(''); */
@@ -72,7 +80,7 @@ hr{
     background-size: cover;
     
 }
-.left{
+.left-text{
     width: 45%;
 }
 
@@ -81,7 +89,7 @@ hr{
     width:60vw;
     border-right: 1px solid #333333;;
    
-
+    cursor: pointer;
 }
 
 
@@ -90,6 +98,7 @@ hr{
     width:30vw;
     justify-content: center;
     margin-top: 10px;
+    cursor: pointer;
 }
 
 .Left_Top, .Left_Bottom{
