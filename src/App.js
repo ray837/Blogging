@@ -24,6 +24,7 @@ import CategoryLoader from "./components/CategoryLoader";
  import Resume from "./components/Resume";
 import BlogLoader from "./components/BlogLoader";
 import TopNav from './components/TopNav'
+import Main from './components/OnTheBlog'
 function App() {
  
  
@@ -58,6 +59,7 @@ function App() {
   
     
    <Routes>    
+    <Route path="/main" element={<Main></Main>}></Route>
     <Route path="/" element={<Home></Home>} ></Route>
     <Route path="/:category" element={<Home ></Home>} ></Route>
     
