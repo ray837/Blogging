@@ -13,6 +13,7 @@ import 'google-code-prettify/bin/prettify.min.js'; // Import the prettify librar
 import 'google-code-prettify/bin/prettify.min.css'
 import { Card, CardContent, Typography, Grid, TextField, MenuItem } from '@mui/material';
 import { dataprovider } from '../data';
+import OnTheBlog from './OnTheBlog';
 const blogData =  dataprovider();
 
 function Home() {
@@ -227,7 +228,7 @@ function Home() {
             <div></div>
         </div>
     </div> */}
-   <div id="features">
+   {/* <div id="features">
     <div id="first_feature">
 <div id="image_holder">
     
@@ -249,7 +250,7 @@ function Home() {
     <p>How a simple programming mistake caused system outage accross globe.</p>
     </div>
 
-</div>
+</div> */}
 <a href="#0" id="float" class="header__search-trigger'">
  
 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
@@ -259,8 +260,11 @@ function Home() {
     <div id="top" class="s-wrap site-wrapper">
  
  
+
+<OnTheBlog/>
+ 
 {/* <Sidebar></Sidebar> */}
-        <div class="s-content">
+        {/* <div class="s-content">
         <div style={{ marginBottom: 16 }}>
             
         <TextField
@@ -661,7 +665,7 @@ function Home() {
                 <a class="smoothscroll" title="Back to Top" href="#top"></a>
             </div>
         </footer>
-
+ */}
     </div> 
  
  
