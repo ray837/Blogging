@@ -71,8 +71,18 @@ hr{
 .Technology{
     cursor: pointer;
 }
-.image{
-    /* background-image: url(''); */
+.tech-image{
+    background-image: url('../images/tech.png');
+    width: 40vw;
+    height: 20vw;
+    margin-top: 80px;
+    background-color: #333333;;
+    background-size: cover;
+    
+}
+
+.philo-image{
+    background-image: url('../images/tech.png');
     width: 40vw;
     height: 20vw;
     margin-top: 80px;
@@ -120,6 +130,9 @@ hr{
     width: 20vw;
     height: 20vw;
     margin-left: 20px;
+    background-image: url('../images/fashion.png');
+    background-size: cover;
+
 }
 
 .Inner_right{
@@ -153,6 +166,8 @@ text-align: justify;
     width: 20vw;
     height: 20vw;
     margin-right: 60px;
+    background-image: url('../images/health.jpg');
+    background-size: cover;
 
 }
 
@@ -161,7 +176,8 @@ text-align: justify;
     background-color: #333333;;
     width: 25vw;
     height: 25vw;
-
+    background-image: url('../images/travel.jpg');
+    background-size: cover;
 
 }
 
@@ -240,6 +256,17 @@ text-align: justify;
  
 
 @media (max-width: 480px) {
+
+    .tech-image {
+        width: 100vw;
+        height: 44vw;
+        margin-top: 10px;
+    }
+    .philo-image{
+        width: 90vw;
+        height: 42vw;
+        margin-top: 10px;
+    }
     .Blog p{
         font-family: 'Breath-Demo';
         padding-top: 20px;
@@ -290,6 +317,10 @@ text-align: justify;
        height: auto;
        aspect-ratio: 4 / 3;
        margin: 0 auto;
+   }
+
+   .right_image{
+    height: 85vw;
    }
    .Inner_Left,.bottom_right{
     background-color: #333333;;

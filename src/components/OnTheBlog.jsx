@@ -43,7 +43,7 @@ function OnTheBlog() {
                 Technology refers to the practical application of scientific knowledge to design tools, systems, and processes that solve problems, improve efficiency, and enhance everyday life. It spans diverse fields such as "information technology computers, software, and the internet", biotechnology "genetic engineering, medical advancements", engineering "machinery, industrial systems",  and communication "smartphones, satellites". Technology has revolutionized industries, enabling global connectivity, automation, and innovation while improving healthcare, education, and productivity.
                  </p>
                  </div>
-                <div className='image'> </div>
+                <div className='tech-image'> </div>
                 
 
             </div>
@@ -100,7 +100,7 @@ function OnTheBlog() {
                 <div className='left-text'>
 
                 <h1 className='tech-title' style={{height:'20px', width:'100vw'}} >Philosophy | Ideas </h1>
-                <div className='image'> </div>
+                <div className='philo-image'> </div>
                 </div>
                 
                 <p  className='tech-text' style={{marginTop:'120px'}} id="philo">
