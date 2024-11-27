@@ -325,7 +325,9 @@ text-align: justify;
       
    }
 
-  
+   #philo {
+    margin-right: 0px !important;
+   }
    
    .title_holder {
        display: flex;
