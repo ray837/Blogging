@@ -5899,7 +5899,8 @@ p {
   color: #c4bcb3;
   background-color: #1d1d1b;
   /* width: 80vw; */
-  align-self: center;
+  justify-self: center;
+  width: 95%;
 }
 .category-holder{
   /* border-bottom: 1px solid black; */
@@ -5917,6 +5918,7 @@ p {
   
   #Category-title{
     font-size:13vw ;
+    width: 95%;
   }
   .head-title {
     font-size: 8vw;
