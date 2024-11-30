@@ -344,7 +344,7 @@ text-align: justify;
      
    }
    
-   .image, .bottom_right,    .right_image {
+   .image, .bottom_right,    .right_image,.finance_image,.science_image {
        background-color: #333333;;
        width: 100%;
        height: auto;
@@ -352,7 +352,7 @@ text-align: justify;
        margin: 0 auto;
    }
 
-   .right_image{
+   .right_image,.finance_image {
     height: 85vw;
     
    }
@@ -367,7 +367,15 @@ text-align: justify;
 
     
    }
-   .bottom_right{
+
+   .science_image {
+        height: 75vw;
+    }
+
+    .finance_image {
+        height: 90vw;
+    }
+   .bottom_right,.curious_image{
     display: none;
    }
 .Second-left{
