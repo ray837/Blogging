@@ -39,9 +39,7 @@ function OnTheBlog() {
                 <div className='left-text'>
                 <h1 className='tech-title'style={{height:'20px'   }}>Technology | Automation </h1>
 
-                <p className='tech-text'>
-                Technology refers to the practical application of scientific knowledge to design tools, systems, and processes that solve problems, improve efficiency, and enhance everyday life. It spans diverse fields such as "information technology computers, software, and the internet", biotechnology "genetic engineering, medical advancements", engineering "machinery, industrial systems",  and communication "smartphones, satellites". Technology has revolutionized industries, enabling global connectivity, automation, and innovation while improving healthcare, education, and productivity.
-                 </p>
+                <p className='tech-text'> In today’s fast-paced world, staying updated with the latest technological advancements is not just beneficial—it’s essential, especially for those in the tech domain. Technology evolves rapidly, and understanding how new tools, systems, and innovations function can give you a significant edge in your career."Technology" category simplifies complex concepts, breaking them down into relatable and actionable insights. With clear interpretations from our authors, you’ll gain a deeper understanding of how things work and how they can be applied to real-world scenarios. As a tech professional, staying informed is crucial to navigating industry trends and overcoming competition in an ever-changing landscape. </p>
                  </div>
                 <div className='tech-image'> </div>
                 
@@ -60,8 +58,7 @@ function OnTheBlog() {
                       
                     </div>
                     <div className='Inner_right'>
-                        <p>A health lifestyle focuses on maintaining physical and mental well-being through balanced nutrition, regular exercise, adequate sleep, stress management, and healthy habits. It involves making conscious choices to prioritize overall health, such as eating nutrient-rich foods, staying active, staying hydrated, and practicing mindfulness.</p>
-
+                   <p> A healthy lifestyle is key to maintaining physical and mental well-being. It includes balanced nutrition, regular exercise, adequate sleep, stress management, and healthy habits. Our "Health" section simplifies these concepts, offering insights into how mindful choices can transform your overall health. Staying informed helps you not only prioritize your well-being but also tackle challenges with confidence in a fast-paced world. </p>
                     </div>
 
                 </div>
@@ -103,12 +100,15 @@ function OnTheBlog() {
                 <div className='philo-image'> </div>
                 </div>
                 
-                <p  className='tech-text' style={{marginTop:'120px'}} id="philo">
-                Philosophy is the study of fundamental questions about existence, knowledge, values, reason, mind, and language. It encourages critical thinking and explores abstract concepts such as truth, morality, and the nature of reality. Philosophers ask deep questions like "What is the meaning of life?" or "What is the right way to live?" and seek to understand the world and our place in it through logic and reasoning.<br/>
-                Ideas in philosophy can range from ethical theories on how we should behave, to metaphysical ideas about what exists beyond the physical world, to epistemological questions about how we know what we know. 
-                 </p>
-               
-               
+                 
+
+<p className='tech-text' style={{marginTop:'120px'}} id="philo"> Philosophy explores profound questions about life, knowledge, values, and existence. It encourages us to think critically about ideas like truth, morality, and the nature of reality. Philosophers often ask questions such as "What is the meaning of life?" or "What is the right way to live?" to better understand the world and our role within it. This field covers a wide range of ideas—from ethical principles that guide our actions to metaphysical concepts about what lies beyond the physical world, and even questions about how we gain knowledge. It offers a deeper perspective on life and challenges us to think in new ways. </p>
+
+
+
+
+
+
                
                 
 
@@ -152,25 +152,25 @@ function OnTheBlog() {
 
          <section id="third">
                 <div className='title_holder'>
-            <h1 className='tech-title'style={{height:'20px', marginLeft:'20px'}}>Eatables | Food </h1>
+            
            
             </div>
             <div className='Second-Outer'>
             <div className='Second-right' onClick={()=>navigate('/Food')}>
+            <h1 className='tech-title'style={{height:'20px', marginLeft:'20px'}}>FINANCE </h1>
                 
-                <div className='right_image'>
+                <div className='finance_image'>
 
                 </div>
                 <div className='right_text'>
-                <p> Food is essential for sustaining life, providing the nutrients and energy our bodies need to function. It includes a wide variety of items that are consumed for nourishment, enjoyment, and cultural traditions.<br/> Eatables, or edible items, are foods that are safe and suitable for consumption. These can range from simple ingredients like bread and vegetables to more complex dishes like soups, stews, or international cuisines. People enjoy food not only for its nutritional value but also for its ability to bring people together, celebrate special occasions, and provide comfort.</p>
-                      
-                </div>
+                <p> Finance is essential for managing money, from daily expenses to long-term goals like education or retirement. Yet, personal finance is rarely taught in schools, leaving many unprepared to handle their finances wisely. Our "Finance" section simplifies topics like budgeting, saving, and investing, making them easy to understand. These blogs help you take control of your money and make smarter financial decisions for a secure future. </p>
+            </div>
 
             </div>
             <div className='Second-left'style={{borderLeft: '1px solid #333333',borderRight:'none', paddingLeft:'20px'}} onClick={()=>navigate('/Case Studies')}>
-            <h1 className='tech-title'style={{  textAlign:'center'}}>Tech-Case | Studies</h1>
+            <h1 className='tech-title'style={{  textAlign:'center'}}>Science & Curiosity</h1>
                 <div className='Left_Top'>
-                    <div className='Inner_Left'>
+                    <div className='science_image'>
                       
                     </div>
                     <div className='Inner_right'>
@@ -183,7 +183,7 @@ function OnTheBlog() {
                 <div className='bottom_left'>
                         <p>These case studies often highlight challenges faced by organizations, the technologies they adopted, and the outcomes achieved.These case studies often highlight challenges faced by organizations, the technologies they adopted, and the outcomes achieved</p>
                     </div>
-                    <div className='bottom_right'>
+                    <div className='curious_image'>
                       
                     </div>
                     
