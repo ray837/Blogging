@@ -10,7 +10,7 @@ function OnTheBlog() {
             <div className='Blog'>
             
             <h1 className='title'>On&nbsp;The&nbsp;Blog</h1> 
-            <hr></hr>
+            {/* <hr></hr> */}
    <div id="features">
     <div id="first_feature">
 <div id="image_holder">
