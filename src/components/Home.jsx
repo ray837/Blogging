@@ -50,6 +50,22 @@ function Home() {
       );
       setFilteredBlogs(filteredData);
     };
+
+
+    useEffect(()=>{
+
+        
+          const filteredData = blogData.filter((blog) =>
+        blog.category.includes(category) 
+        //   &&        blog.category.toLowerCase().includes(category)
+        
+      );
+      setFilteredBlogs(filteredData);
+      console.log(category)
+      console.log(blogData[0].category==category)
+
+    },[]);
+
     useEffect(() => {
         // Add the User Agent to the <html>
         document.documentElement.setAttribute('data-useragent', navigator.userAgent);
