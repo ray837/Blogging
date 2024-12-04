@@ -156,7 +156,7 @@ function OnTheBlog() {
            
             </div>
             <div className='Second-Outer'>
-            <div className='Second-right' onClick={()=>navigate('/Food')}>
+            <div className='Second-right' onClick={()=>navigate('/Finance')}>
             <h1 className='tech-title'style={{height:'20px', marginLeft:'20px'}}>FINANCE </h1>
                 
                 <div className='finance_image'>
