@@ -39,7 +39,7 @@ function OnTheBlog() {
                 <div className='left-text'>
                 <h1 className='tech-title'style={{height:'20px'   }}>Technology | Automation </h1>
 
-                <p className='tech-text'> In today’s fast-paced world, staying updated with the latest technological advancements is not just beneficial—it’s essential, especially for those in the tech domain. Technology evolves rapidly, and understanding how new tools, systems, and innovations function can give you a significant edge in your career."Technology" category simplifies complex concepts, breaking them down into relatable and actionable insights. With clear interpretations from our authors, you’ll gain a deeper understanding of how things work and how they can be applied to real-world scenarios. As a tech professional, staying informed is crucial to navigating industry trends and overcoming competition in an ever-changing landscape. </p>
+                <p className='tech-text'> In today’s fast-paced world, staying updated with the latest technological advancements is not just beneficial—it’s essential, especially for those in the tech domain. Technology evolves rapidly, and understanding how new tools, systems, and innovations function can give you a significant edge in your career."Technology" category simplifies complex concepts, breaking them down into relatable and actionable insights.<span id='secondpara'>With clear interpretations from our authors, you’ll gain a deeper understanding of how things work and how they can be applied to real-world scenarios. As a tech professional, staying informed is crucial to navigating industry trends and overcoming competition in an ever-changing landscape. </span></p>
                  </div>
                 <div className='tech-image'> </div>
                 
@@ -102,7 +102,7 @@ function OnTheBlog() {
                 
                  
 
-<p className='tech-text' style={{marginTop:'120px'}} id="philo"> Philosophy explores profound questions about life, knowledge, values, and existence. It encourages us to think critically about ideas like truth, morality, and the nature of reality. Philosophers often ask questions such as "What is the meaning of life?" or "What is the right way to live?" to better understand the world and our role within it. This field covers a wide range of ideas—from ethical principles that guide our actions to metaphysical concepts about what lies beyond the physical world, and even questions about how we gain knowledge. It offers a deeper perspective on life and challenges us to think in new ways. </p>
+<p className='tech-text' style={{marginTop:'120px'}} id="philo"> Philosophy explores profound questions about life, knowledge, values, and existence. It encourages us to think critically about ideas like truth, morality, and the nature of reality. Philosophers often ask questions such as "What is the meaning of life?" or "What is the right way to live?" to better understand the world and our role within it. <span id='secondpara'>This field covers a wide range of ideas—from ethical principles that guide our actions to metaphysical concepts about what lies beyond the physical world, and even questions about how we gain knowledge. It offers a deeper perspective on life and challenges us to think in new ways.</span> </p>
 
 
 

@@ -14,12 +14,18 @@
     font-family: "QESTERO-Regular";
     src: url('../fonts/WERMINO-DEMO.ttf');
 }
+@font-face {
+    font-family: "QESTERO-Regular";
+    src: url('../fonts/warriot-Bold.ttf');
+}
+
+ 
 
 
 
 .title {
     text-align: center;
-    font-size: 10vw;
+    font-size: 13vw;
     font-family: 'QESTERO-Regular';
     color: #333333;;
     font-weight: 200;
@@ -280,8 +286,7 @@ text-align: justify;
 
 .Blog p{
     font-family: 'Breath-Demo';
-  
-
+   
 }
 
 #third{
@@ -291,6 +296,10 @@ text-align: justify;
  
 
 @media (max-width: 480px) {
+
+    #third_feature h4 {
+        font-size: 18px;
+    }
 
     .tech-image {
         width: 100vw;
@@ -304,7 +313,7 @@ text-align: justify;
     }
     .Blog p{
         font-family: 'Breath-Demo';
-        padding-top: 20px;
+        padding-top: 5px;
     
     }
 
@@ -312,7 +321,7 @@ text-align: justify;
         padding: 0px;
     }
     .title {
-        font-size: 8vw;
+        font-size: 13vw;
         margin: 20px 0;
         border-bottom: 0.5px solid rgb(74, 74, 74);
         width: 95%;
@@ -424,7 +433,9 @@ text-align: justify;
        padding: 10px;
    }
    
- 
+ .Left_Bottom,#secondpara{
+    display: none;
+ }
 
 }
 
