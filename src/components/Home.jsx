@@ -14,10 +14,12 @@ import 'google-code-prettify/bin/prettify.min.js'; // Import the prettify librar
 import 'google-code-prettify/bin/prettify.min.css'
 import { Card, CardContent, Typography, Grid, TextField, MenuItem } from '@mui/material';
 import { dataprovider } from '../data';
-
+ 
 const blogData =  dataprovider();
 
 function Home() {
+    
+    const navigate = useNavigate();
     
     const {category}=useParams();
     const [filteredBlogs, setFilteredBlogs] = React.useState(blogData);
