@@ -196,7 +196,7 @@ subtopic: "Challenges and Strategies"
 },
 {
   "id": 5,
-  "title": "The 80/20 Rule: Focus on What Matters Most",
+  "title": "The 80/20 Rule: Pareto Principle",
   "category": "Finance",
   "intro": "The 80/20 Rule, also known as the Pareto Principle, is a powerful concept that can be applied to budgeting. It suggests that 80% of your results come from 20% of your efforts. In budgeting, this means focusing on the 20% of your spending that impacts 80% of your financial outcomes.",
   "content": "The 80/20 Rule is a simple yet effective strategy to streamline your finances. It encourages you to focus on the small percentage of your expenses that have the biggest impact on your financial well-being. Here's how to apply it: <br/><b>Step 1: Identify Key Spending Areas</b> Analyze your budget and identify the 20% of expenses that consume most of your income. These might include housing, transportation, and debt payments. <br/><b>Step 2: Cut Unnecessary Spending</b> Once you've identified the essential areas of your budget, work to reduce spending on less impactful categories, such as entertainment or dining out. <br/><br/>For example, if you spend $1,500 on rent and $200 on entertainment, the rent constitutes a significant portion of your budget. By focusing on cutting back on the entertainment budget (the 20%), you can make a substantial impact on your overall spending. <br/><br/>By applying the 80/20 Rule, you gain clarity on which expenses are most important and which ones can be minimized. This principle helps you prioritize your spending, reduce financial clutter, and align your budget with your long-term goals. It’s especially helpful for those looking to optimize their spending and maximize their financial outcomes.",
@@ -206,18 +206,7 @@ subtopic: "Challenges and Strategies"
   "date": "Oct 20, 2022",
   "subtopic":  "Budgeting Strategy"
 },
-{
-  "id": 6,
-  "title": "Zero-Based Budgeting: Every Dollar Counts",
-  "category": "Finance",
-  "intro": "Zero-Based Budgeting (ZBB) is a method that allocates every dollar of your income to a specific purpose, whether it’s for savings, spending, or debt repayment. With ZBB, your starting point is always zero, meaning you have to justify every expense.",
-  "content": "Zero-Based Budgeting ensures that you assign every dollar a role in your financial plan. Here’s how it works: <br/><b>Step 1: Start at Zero</b> Begin with a $0 balance for each budgeting period (usually monthly). <br/><b>Step 2: Allocate Every Dollar</b> Every dollar you earn is given a specific category. You categorize your income into savings, essentials (like rent and groceries), non-essentials (like entertainment), and debt repayment. <br/><b>Step 3: Adjust as Needed</b> If your expenses exceed your income, you’ll need to cut back in certain categories to ensure that all money is accounted for. <br/><br/>For example, if you earn $3,000 in a month, you allocate $800 for rent, $400 for groceries, $300 for savings, and $100 for entertainment. Once all categories are filled, you have no money left. If your spending doesn't align with your income, you adjust until the balance equals zero. <br/><br/>Zero-Based Budgeting is ideal for those who want to take full control of their finances. This method eliminates wasteful spending and helps you stay accountable to your financial goals by forcing you to plan and prioritize each expense. It can be particularly useful if you have a specific financial target, like paying off debt or saving for a large purchase.",
-  "image": "https://barkigo.com/zero-based-budgeting.jpg",
-  "excerpt": "Zero-Based Budgeting allocates every dollar of your income, ensuring that you know exactly where every cent goes.",
-  "author": "Financial Expert",
-  "date": "Oct 25, 2022",
-  "subtopic":  "Budgeting Strategy"
-}
+ 
 ,{
   "id": 7,
   "title": "The Anti-Budget: A Flexible Approach to Finances",
@@ -230,30 +219,7 @@ subtopic: "Challenges and Strategies"
   "date": "Oct 30, 2022",
   "subtopic":  "Budgeting Strategy"
 }
-,{
-  "id": 9,
-  "title": "The Snowball Method: A Debt-Repayment Strategy",
-  "category": "Finance",
-  "intro": "The Snowball Method is a debt-repayment strategy that encourages individuals to pay off their debts from the smallest to the largest balance. It’s a psychological approach that focuses on gaining momentum by tackling smaller debts first.",
-  "content": "The Snowball Method is all about creating momentum in your debt repayment journey. Here’s how it works: <br/><b>Step 1: List Your Debts</b> Write down all your debts, from smallest to largest, regardless of the interest rates. <br/><b>Step 2: Pay Off the Smallest Debt</b> Focus all your extra money on paying off the smallest debt first while continuing to make minimum payments on the larger debts. <br/><b>Step 3: Move to the Next Debt</b> Once the smallest debt is paid off, take the amount you were using to pay it down and apply it to the next smallest debt. Continue the process until all debts are paid off. <br/><br/>For example, if you have the following debts: <br/><ul><li>Credit Card: $500</li><li>Loan: $2,000</li><li>Student Loan: $5,000</li></ul> You would focus all your extra payments on the $500 credit card debt first. Once it’s paid off, you move on to the $2,000 loan. <br/><br/>The Snowball Method works because it provides quick wins, which boosts your motivation and helps you stay on track. As you pay off each debt, you gain a sense of accomplishment, which drives you to tackle the next one. This method is particularly effective for those who need a psychological boost to stick to their debt repayment plan.",
-  "image": "https://barkigo.com/snowball-method.jpg",
-  "excerpt": "The Snowball Method helps you pay off debt by focusing on the smallest balances first, gaining momentum as you go.",
-  "author": "Dave Ramsey",
-  "date": "Nov 5, 2022",
-  "subtopic": "Debt & Budgeting Strategy"
-}
-,{
-  "id": 10,
-  "title": "The Debt Avalanche Method: Save Money on Interest",
-  "category": "Finance",
-  "intro": "The Debt Avalanche Method is a strategy for paying off debts by focusing on the highest-interest debt first. It is a mathematically optimized method that minimizes the amount you pay in interest over time.",
-  "content": "The Debt Avalanche Method is a debt-repayment strategy that prioritizes paying off high-interest debts first. Here's how it works: <br/><b>Step 1: List Your Debts by Interest Rate</b> List your debts from the highest interest rate to the lowest. <br/><b>Step 2: Pay Minimum on All But the Highest-Interest Debt</b> Continue to make minimum payments on all of your debts except the one with the highest interest rate. <br/><b>Step 3: Focus on the Highest-Interest Debt</b> Direct any extra money you have toward paying off the debt with the highest interest rate first. Once it's paid off, move on to the next highest-interest debt, and so on. <br/><br/>For example, if you have the following debts: <br/><ul><li>Credit Card 1: $5,000 at 18% interest</li><li>Loan: $2,000 at 6% interest</li><li>Credit Card 2: $1,000 at 10% interest</li></ul> You would focus on paying off the $5,000 credit card first. Once it's paid off, you move on to the $1,000 credit card debt. <br/><br/>The Debt Avalanche Method is the most cost-effective strategy in terms of total interest paid. It’s best for people who can stay motivated by focusing on saving money on interest and are disciplined enough to stick with it for the long term.",
-  "image": "https://barkigo.com/debt-avalanche.jpg",
-  "excerpt": "The Debt Avalanche Method helps you save on interest by paying off the highest-interest debt first.",
-  "author": "Financial Expert",
-  "date": "Nov 10, 2022",
-  "subtopic": "Debt & Budgeting Strategy"
-}
+ 
 ,{
     "id": 6,
     "title": "Line-Item Budgeting: A Detailed Approach to Tracking Expenses",
@@ -358,7 +324,7 @@ subtopic: "Challenges and Strategies"
     "content": "The Kakeibo Method encourages mindful spending and saving. <br/><b>Step 1: Track Income</b> Record your income and write it down. <br/><b>Step 2: Set Savings Goals</b> Set a monthly savings goal and break it down into categories. <br/><b>Step 3: Categorize Spending</b> Divide your expenses into categories: needs, wants, culture, and unexpected costs. <br/><b>Step 4: Reflect on Spending</b> At the end of the month, review your spending and assess whether it aligns with your goals. <br/><br/>This method is ideal for people who prefer a mindful, holistic approach to their finances.",
     "image": "https://barkigo.com/kakeibo-method.jpg",
     "excerpt": "The Kakeibo Method focuses on mindful spending and saving to help you control your finances.",
-    "author": "Finance Expert",
+    "author": "Hani Motoko",
     "date": "Mar 15, 2024",
     "subtopic":  "Budgeting Strategy"
   },
@@ -381,7 +347,7 @@ subtopic: "Challenges and Strategies"
     "content": "The Debt Snowball Method helps you tackle debt step by step. <br/><b>Step 1: List Your Debts from Smallest to Largest</b> Arrange your debts from the smallest to the largest balance. <br/><b>Step 2: Pay Off the Smallest Debt First</b> Direct all your extra funds toward paying off the smallest debt while making minimum payments on the rest. <br/><b>Step 3: Repeat the Process</b> Once the smallest debt is paid off, move to the next smallest debt, and continue this process until all debts are paid. <br/><br/>This method is effective for those who need quick wins to stay motivated and gain momentum in their debt repayment journey.",
     "image": "https://barkigo.com/debt-snowball-method.jpg",
     "excerpt": "The Debt Snowball Method helps pay off debt by focusing on the smallest debt first, creating momentum.",
-    "author": "Debt Specialist",
+    "author": 'Dave Ramsey',
     "date": "Mar 25, 2024",
     "subtopic": "Debt & Budgeting Strategy"
   },
@@ -429,7 +395,7 @@ subtopic: "Challenges and Strategies"
     "content": "The Digital Envelope System helps manage finances with technology. <br/><b>Step 1: Set Budget Categories</b> Create digital envelopes for each spending category (e.g., groceries, entertainment, savings). <br/><b>Step 2: Allocate Funds</b> Assign a specific amount of money to each envelope for the month. <br/><b>Step 3: Track Spending</b> Use budgeting apps to track your spending and ensure you don't exceed your limits. <br/><br/>This method is ideal for tech-savvy individuals who prefer managing their finances digitally and want to avoid overspending.",
     "image": "https://barkigo.com/digital-envelope-system.jpg",
     "excerpt": "The Digital Envelope System brings traditional budgeting into the digital age, helping you track spending easily.",
-    "author": "Tech-Savvy Finance Expert",
+    "author": "Finance Expert",
     "date": "Apr 15, 2024",
     "subtopic": "Budgeting Methods"
   }, {
@@ -440,7 +406,7 @@ subtopic: "Challenges and Strategies"
     "content": "The Fifty/Fifty Savings method is simple and effective. <br/><b>Step 1: Split Your Income</b> Allocate 50% of your income for living expenses (rent, groceries, etc.), and save the other 50%. <br/><b>Step 2: Stick to the Split</b> The key to this method is discipline—ensure you live on half your income and set aside the other half for savings or investments. <br/><br/>This method is ideal for individuals who want a structured approach to budgeting and saving, ensuring that they build wealth while managing their living costs.",
     "image": "https://barkigo.com/fifty-fifty-savings.jpg",
     "excerpt": "The Fifty/Fifty Savings method divides your income into two parts: one for expenses and one for savings.",
-    "author": "Personal Finance Expert",
+    "author": "Finance Expert",
     "date": "Apr 20, 2024",
     "subtopic": "Savings Strategies"
   },
@@ -452,7 +418,7 @@ subtopic: "Challenges and Strategies"
     "content": "The 'No Budget' Budget is about freedom and flexibility. <br/><b>Step 1: Eliminate the Strict Rules</b> Instead of assigning fixed amounts to categories, simply spend on things that matter most to you and avoid unnecessary purchases. <br/><b>Step 2: Focus on Needs, Not Wants</b> Make decisions that are aligned with your values, not based on restrictive categories. <br/><br/>This approach works for individuals who find traditional budgeting too constricting and prefer a more holistic view of money management.",
     "image": "https://barkigo.com/no-budget-budget.jpg",
     "excerpt": "The 'No Budget' Budget allows you to focus on conscious spending without the constraints of a traditional budget.",
-    "author": "Finance Minimalist",
+    "author": "Finance Expert",
     "date": "Apr 25, 2024",
     "subtopic": "Budgeting Methods"
   },
@@ -464,7 +430,7 @@ subtopic: "Challenges and Strategies"
     "content": "Parkinson’s Law is all about restraint. <br/><b>Step 1: Limit Your Spending</b> Set a firm limit on your monthly expenses, regardless of how much you earn. <br/><b>Step 2: Save the Excess</b> Direct any unused funds toward savings or investments. <br/><br/>This method works by creating a fixed boundary for spending, allowing you to focus on saving regardless of your income level.",
     "image": "https://barkigo.com/parkinsons-law-budget.jpg",
     "excerpt": "The Parkinson’s Law Budget limits your spending so that you save more, even if your income increases.",
-    "author": "Behavioral Economist",
+    "author":  'C. Northcote Parkinson',
     "date": "May 1, 2024",
     "subtopic": "Money Management"
   },
@@ -476,7 +442,7 @@ subtopic: "Challenges and Strategies"
     "content": "The Freedom Budget focuses on aligning your money with your life goals. <br/><b>Step 1: Define Your Freedom Goals</b> Identify what financial freedom means to you—whether it's early retirement, a debt-free life, or living simply. <br/><b>Step 2: Adjust Spending and Saving</b> Allocate your money towards achieving those goals, cutting unnecessary spending along the way. <br/><br/>This budgeting method encourages individuals to reduce financial stress by focusing on what truly matters for long-term freedom.",
     "image": "https://barkigo.com/freedom-budget.jpg",
     "excerpt": "The Freedom Budget helps prioritize long-term financial freedom by focusing on essential goals and cutting excess.",
-    "author": "Life Coach & Finance Expert",
+    "author": "Finance Expert",
     "date": "May 5, 2024",
     "subtopic": "Money Management"
   },
@@ -523,7 +489,7 @@ subtopic: "Challenges and Strategies"
     "content": "The Jar System uses the principle of physical separation of funds. <br/><b>Step 1: Divide Your Income into Five Jars</b> Assign specific categories for each jar: <ul><li>Jar 1: Necessities</li><li>Jar 2: Long-Term Savings</li><li>Jar 3: Short-Term Savings</li><li>Jar 4: Discretionary Spending</li><li>Jar 5: Giving</li></ul> <br/><b>Step 2: Stick to Your Allocation</b> Spend according to the amounts you’ve allocated in each jar, ensuring you adhere to the principle of saving before spending. <br/><br/>This method helps bring clarity to your financial situation, especially if you struggle with dividing your income effectively.",
     "image": "https://barkigo.com/jar-system-budgeting.jpg",
     "excerpt": "The Jar System splits your income into five jars for better organization and intentional spending.",
-    "author": "Financial Educator",
+    "author": 'T. Harv Eker',
     "date": "May 25, 2024",
     "subtopic":  "Budgeting Strategy"
   },
@@ -535,7 +501,7 @@ subtopic: "Challenges and Strategies"
     "content": "Triage Budgeting follows a life-or-death decision-making process. <br/><b>Step 1: Rank Your Expenses</b> Prioritize your spending based on urgency—essentials like food, housing, and healthcare come first. <br/><b>Step 2: Defer Less Critical Spending</b> Postpone less urgent expenses, such as luxuries or non-essential purchases, until the critical needs are met. <br/><br/>This approach is beneficial for those facing financial strain and needing to focus on the most immediate priorities.",
     "image": "https://barkigo.com/triage-budgeting.jpg",
     "excerpt": "Triage Budgeting helps you prioritize spending by focusing on the most urgent needs first.",
-    "author": "Personal Finance Specialist",
+    "author": "Finance Expert",
     "date": "Jun 1, 2024",
     "subtopic":  "Budgeting Strategy"
   }
