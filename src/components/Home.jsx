@@ -380,7 +380,7 @@ function Home() {
                                     <h2 class="entry__title">  <a href={`/author/${blog.author}/${blog.id}`} style={{color:"black" }}>{blog.title}</a></h2>
                                     <div class="entry__meta">
                                         <span class="entry__meta-cat">
-                                            <Link href={`/category/${blog.category}`}>Programming language</Link> 
+                                            <Link href={`/category/${blog.category}`}>{blog.subtopic}</Link> 
                                             <Link href={`/category/${blog.category}`}>{blog.category}</Link>
                                         </span>
                                         <span class="entry__meta-date">
@@ -685,7 +685,7 @@ function Home() {
 
             </div> 
 
-            <div class="row">
+            {/* <div class="row">
                 <div class="column large-full">
                     <nav class="pgn">
                         <ul>
@@ -701,7 +701,7 @@ function Home() {
                         </ul>
                     </nav>
                 </div>
-            </div>
+            </div> */}
 
         </div>  
 
